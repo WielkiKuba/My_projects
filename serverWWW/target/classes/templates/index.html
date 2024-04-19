@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .mainDiv{
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 80vh;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+        }
+        h1{
+            scale: 200%;
+            margin-top: 100px;
+        }
+        input,button{
+            /* margin-top: 50px; */
+            width: 60%;
+            height: 25%;
+            border: 0px;
+        }
+        button{
+            background-color: #2B6ED9;
+        }
+        button:hover{
+            background-color: #582BD9;
+        }
+        .normal{
+            height: 25%;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .secendDiv{
+            height: 25%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="secendDiv">
+            <h1>Login Page</h1>
+        </div>
+        <form action="/login" method="post">
+            <div class="normal">
+                <input type="text" placeholder="ENTER EMAIL" name="username">
+            </div>
+            <div class="secendDiv">
+                <input type="password" placeholder="ENTER PASSWORD" name="password">
+            </div>
+            <div class="secendDiv">
+                <!-- <input type="submit" value="SIGN IN"> -->
+                <!-- <input type="submit" name="SING IN"> -->
+                <button>SIGN IN</button>
+            </div>
+        </form>
+    </div>
+    <p>You don't have an account?<br><a href="https://youtube.com">Create a free account here!</a></p>
+</body>
+</html>
